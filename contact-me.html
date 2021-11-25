@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- This is the header of the page -->
+  <head>
+    <!-- Defines character set for page -->
+    <meta charset="utf-8" />
+    <!-- Describes what this page is for -->
+    <meta name="description" content="Unit 3 website project" />
+    <!-- This helps smart devices like Ipads, tablets and spart phones parse the page-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Changes tab title -->
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@200&family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- This is the body -->
+  <body class="body_content">
+    <!-- This is my header -->
+    <div class="container">
+      <header class="header_content">
+        <!-- This is my main title -->
+        <h1 class="title_name">Contact Me</h1>
+        <nav>
+          <ul>
+            <li><a href="index.html">Home Page</a></li>
+            &nbsp;
+            <li><a href="favorites.html">Favorites</a></li>
+            &nbsp;
+            <li><a href="gallery.html">Image Gallery</a></li>
+            &nbsp;
+            <li><a href="resume.html">Resume</a></li>
+            &nbsp;
+            <li><a href="contact-me.html">Contact Me</a></li>
+            &nbsp;
+            <li><a href="mailto:gferguson@mymail.tstc.edu">Email me!</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!-- This is my main element -->
+      <main>
+        <form action="mailto:gferguson@mymail.tstc.edu" method="get">
+          <fieldset class="contact">
+            <legend>Submit your request here</legend>
+            <div class="contact_form">
+              <label for="name">Name:</label>
+              <input class="contact_interaction" type="text" id="name" name="name">
+              <label for="email">Email:</label>
+              <input class="contact_interaction" type="email" id="email">
+              <label for="pnumber">Phone number:</label>
+              <input class="contact_interaction" type="tel" id="pnumber">
+              <label for="website">Website URL:</label>
+              <input class="contact_interaction" type="url" id="website">
+                <legend>Gender:</legend>
+                <div>
+                  <input type="radio" id="Nonbinary" name="gender" value="Nonbinary">
+                  <label for="Nonbinary">Nonbinary</label>
+                </div>
+                <div>
+                  <input type="radio" id="Female" name="gender" value="Female">
+                  <label for="Female">Female</label>
+                </div>
+                <div>
+                  <input type="radio" id="Male" name="gender" value="Male">
+                  <label for="Male">Male</label>
+                </div>
+                <div>
+                  <input type="radio" id="Other" name="gender" value="Other" checked>
+                  <label for="Other">Prefer not to say</label>
+                </div>
+                <legend>Pronouns:</legend>
+                <div>
+                  <input type="checkbox" id="they" name="pronouns" value="they">
+                  <label for="they">They/Them</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="she" name="pronouns" value="she">
+                  <label for="she">She/Her</label>
+                </div>
+                <div>
+                  <input type="checkbox" id="he" name="pronouns" value="he">
+                  <label for="he">He/Him</label>
+                </div>
+                <label for="reason">Nature of contact:</label>
+                <select id="reason" name="reason">
+                  <option value="personal">Personal</option>
+                  <option value="business">Business</option>
+                  <option value="other">Other</option>
+                </select>
+                <label for="dateofcontact">Date of contact:</label>
+                <input type="date" id="dateofcontact" name="dateofcontact">
+            </div>
+              <div class="commentbox"> 
+                <p class="comments">Comments: </p>
+                <textarea class="contact_interaction" name="message" rows="3" cols="30"></textarea>
+              </div>
+              <div class="button">
+                <button class="contact_interaction" type="button">
+                  Submit
+                </button>
+              </div>
+          </fieldset>
+        </form>
+      </main>
+      <!-- This is a footer -->
+      <footer>
+        <!-- This is the copyright notice -->
+        <p>&copy; 2021-2022 - Gwen Ferguson. All rights reserved.</p>
+        <address>
+          <a href="mailto:gferguson@mymail.tstc.edu"
+            >gferguson@mymail.tstc.edu</a
+          >
+        </address>
+      </footer>
+    </div>
+  </body>
+</html>
